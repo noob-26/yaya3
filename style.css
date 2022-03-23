@@ -9,6 +9,12 @@
   src: url(./metropolis.medium\\(1\).otf);
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
 body {
   font-family: Metropolis;
 }
@@ -21,7 +27,7 @@ body {
 }
 
 .header {
-  width: 35.5%;
+  width: 100%;
   background-color: #372583;
   padding: 20px 40px;
   color: white;
@@ -123,12 +129,12 @@ body {
 }
 
 .img-container > img {
-  width: 242px;
-  height: 135px;
+  width: 500px;
+  height: 198px;
 }
 
 .info-container {
-  width: 35.5%;
+  width: 100%;
   margin-top: 24px;
 }
 
@@ -380,4 +386,8 @@ body {
 
 .info-2 {
   padding-left: 0px;
+}
+
+.info-container-services{
+  margin-bottom: 10px;
 }
